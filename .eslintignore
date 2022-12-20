@@ -1,0 +1,12 @@
+src/
+packages/
+examples/
+*.sh
+node_modules
+lib
+coverage
+test/
+*.md
+*.scss
+*.woff
+*.ttf
