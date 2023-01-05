@@ -51,7 +51,7 @@ describe('Descriptions', () => {
     vm = createVue(
       {
         template: `
-          <el-descriptions border labac-class-name="labac-class-name" content-class-name="content-class-name">
+          <el-descriptions border label-class-name="label-class-name" content-class-name="content-class-name">
             <el-descriptions-item v-for="item in 3" :label="item" :key="item">{{ item }}</el-descriptions-item>
           </el-descriptions>
         `,
@@ -61,7 +61,7 @@ describe('Descriptions', () => {
 
     expect(
       Array.from(vm.$el.querySelector('.ac-descriptions-item__label').classList)
-    ).to.contain('labac-class-name');
+    ).to.contain('label-class-name');
     expect(
       Array.from(
         vm.$el.querySelector('.ac-descriptions-item__content').classList

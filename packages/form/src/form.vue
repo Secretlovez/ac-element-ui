@@ -2,7 +2,7 @@
   <form
     class="ac-form"
     :class="[
-      labelPosition ? 'ac-form--labac-' + labelPosition : '',
+      labelPosition ? 'ac-form--label-' + labelPosition : '',
       { 'ac-form--inline': inline },
     ]"
   >

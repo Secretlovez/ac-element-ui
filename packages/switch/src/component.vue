@@ -22,7 +22,7 @@
     <span
       :class="[
         'ac-switch__label',
-        'ac-switch__labac--left',
+        'ac-switch__label--left',
         !checked ? 'is-active' : '',
       ]"
       v-if="inactiveIconClass || inactiveText"
@@ -41,7 +41,7 @@
     <span
       :class="[
         'ac-switch__label',
-        'ac-switch__labac--right',
+        'ac-switch__label--right',
         checked ? 'is-active' : '',
       ]"
       v-if="activeIconClass || activeText"

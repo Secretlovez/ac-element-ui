@@ -872,17 +872,17 @@ $--scrollbar-hover-background-color: rgba(
 /* Carousel
 --------------------------*/
 /// fontSize||Font|1
-$--carousac-arrow-font-size: 12px !default;
-$--carousac-arrow-size: 36px !default;
-$--carousac-arrow-background: rgba(31, 45, 61, 0.11) !default;
-$--carousac-arrow-hover-background: rgba(31, 45, 61, 0.23) !default;
+$--carousel-arrow-font-size: 12px !default;
+$--carousel-arrow-size: 36px !default;
+$--carousel-arrow-background: rgba(31, 45, 61, 0.11) !default;
+$--carousel-arrow-hover-background: rgba(31, 45, 61, 0.23) !default;
 /// width||Other|4
-$--carousac-indicator-width: 30px !default;
+$--carousel-indicator-width: 30px !default;
 /// height||Other|4
-$--carousac-indicator-height: 2px !default;
-$--carousac-indicator-padding-horizontal: 4px !default;
-$--carousac-indicator-padding-vertical: 12px !default;
-$--carousac-indicator-out-color: $--border-color-hover !default;
+$--carousel-indicator-height: 2px !default;
+$--carousel-indicator-padding-horizontal: 4px !default;
+$--carousel-indicator-padding-vertical: 12px !default;
+$--carousel-indicator-out-color: $--border-color-hover !default;
 
 /* Collapse
 --------------------------*/
@@ -908,15 +908,15 @@ $--collapse-content-font-color: $--color-text-primary !default;
 $--transfer-border-color: $--border-color-lighter !default;
 $--transfer-border-radius: $--border-radius-base !default;
 /// height||Other|4
-$--transfer-panac-width: 200px !default;
+$--transfer-panel-width: 200px !default;
 /// height||Other|4
-$--transfer-panac-header-height: 40px !default;
+$--transfer-panel-header-height: 40px !default;
 /// color||Color|0
-$--transfer-panac-header-background-color: $--background-color-base !default;
+$--transfer-panel-header-background-color: $--background-color-base !default;
 /// height||Other|4
-$--transfer-panac-footer-height: 40px !default;
+$--transfer-panel-footer-height: 40px !default;
 /// height||Other|4
-$--transfer-panac-body-height: 246px !default;
+$--transfer-panel-body-height: 246px !default;
 /// height||Other|4
 $--transfer-item-height: 30px !default;
 /// height||Other|4
@@ -982,7 +982,7 @@ $--calendar-cell-width: 85px !default;
 /* Form
 -------------------------- */
 /// fontSize||Font|1
-$--form-labac-font-size: $--font-size-base !default;
+$--form-label-font-size: $--font-size-base !default;
 
 /* Avatar
 --------------------------*/
@@ -1015,7 +1015,7 @@ $--empty-bottom-margin-top: 20px !default;
 $--descriptions-header-margin-bottom: 20px !default;
 $--descriptions-title-font-size: 16px !default;
 $--descriptions-table-border: 1px solid $--border-color-lighter !default;
-$--descriptions-item-bordered-labac-background: #fafafa !default;
+$--descriptions-item-bordered-label-background: #fafafa !default;
 
 /* Skeleton 
 --------------------------*/

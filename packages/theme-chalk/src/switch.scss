@@ -96,12 +96,12 @@
 
   @include m(wide) {
     .ac-switch__label {
-      &.ac-switch__labac--left {
+      &.ac-switch__label--left {
         span {
           left: 10px;
         }
       }
-      &.ac-switch__labac--right {
+      &.ac-switch__label--right {
         span {
           right: 10px;
         }
@@ -109,8 +109,8 @@
     }
   }
 
-  & .labac-fade-enter,
-  & .labac-fade-leave-active {
+  & .label-fade-enter,
+  & .label-fade-leave-active {
     opacity: 0;
   }
 }

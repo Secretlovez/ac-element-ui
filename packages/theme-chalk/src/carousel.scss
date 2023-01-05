@@ -23,19 +23,19 @@
     outline: none;
     padding: 0;
     margin: 0;
-    height: $--carousac-arrow-size;
-    width: $--carousac-arrow-size;
+    height: $--carousel-arrow-size;
+    width: $--carousel-arrow-size;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 50%;
-    background-color: $--carousac-arrow-background;
+    background-color: $--carousel-arrow-background;
     color: $--color-white;
     position: absolute;
     top: 50%;
     z-index: 10;
     transform: translateY(-50%);
     text-align: center;
-    font-size: $--carousac-arrow-font-size;
+    font-size: $--carousel-arrow-font-size;
 
     @include m(left) {
       left: 16px;
@@ -46,7 +46,7 @@
     }
 
     &:hover {
-      background-color: $--carousac-arrow-hover-background;
+      background-color: $--carousel-arrow-hover-background;
     }
 
     & i {
@@ -74,8 +74,8 @@
     }
 
     @include m(outside) {
-      bottom: #{$--carousac-indicator-height +
-        $--carousac-indicator-padding-vertical * 2};
+      bottom: #{$--carousel-indicator-height +
+        $--carousel-indicator-padding-vertical * 2};
       text-align: center;
       position: static;
       transform: none;
@@ -83,7 +83,7 @@
         opacity: 0.64;
       }
       button {
-        background-color: $--carousac-indicator-out-color;
+        background-color: $--carousel-indicator-out-color;
         opacity: 0.24;
       }
     }
@@ -117,16 +117,16 @@
 
     @include m(horizontal) {
       display: inline-block;
-      padding: $--carousac-indicator-padding-vertical
-        $--carousac-indicator-padding-horizontal;
+      padding: $--carousel-indicator-padding-vertical
+        $--carousel-indicator-padding-horizontal;
     }
 
     @include m(vertical) {
-      padding: $--carousac-indicator-padding-horizontal
-        $--carousac-indicator-padding-vertical;
+      padding: $--carousel-indicator-padding-horizontal
+        $--carousel-indicator-padding-vertical;
       .ac-carousel__button {
-        width: $--carousac-indicator-height;
-        height: #{math.div($--carousac-indicator-width, 2)};
+        width: $--carousel-indicator-height;
+        height: #{math.div($--carousel-indicator-width, 2)};
       }
     }
 
@@ -140,8 +140,8 @@
   @include e(button) {
     display: block;
     opacity: 0.48;
-    width: $--carousac-indicator-width;
-    height: $--carousac-indicator-height;
+    width: $--carousel-indicator-width;
+    height: $--carousel-indicator-height;
     background-color: $--color-white;
     border: none;
     outline: none;
@@ -152,14 +152,14 @@
   }
 }
 
-.carousac-arrow-left-enter,
-.carousac-arrow-left-leave-active {
+.carousel-arrow-left-enter,
+.carousel-arrow-left-leave-active {
   transform: translateY(-50%) translateX(-10px);
   opacity: 0;
 }
 
-.carousac-arrow-right-enter,
-.carousac-arrow-right-leave-active {
+.carousel-arrow-right-enter,
+.carousel-arrow-right-leave-active {
   transform: translateY(-50%) translateX(10px);
   opacity: 0;
 }

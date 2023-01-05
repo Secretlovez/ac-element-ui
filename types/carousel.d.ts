@@ -45,7 +45,7 @@ export declare class ElCarousel extends ElementUIComponent {
   /**
    * Manually switch slide by carousel item's name
    *
-   * @param name The name of the corresponding `ac-carousac-item`
+   * @param name The name of the corresponding `ac-carousel-item`
    */
   setActiveItem (name: string): void
 

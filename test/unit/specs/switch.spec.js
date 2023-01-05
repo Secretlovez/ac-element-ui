@@ -21,7 +21,7 @@ describe('Switch', () => {
     expect(core.style.backgroundColor).to.equal('rgb(255, 0, 0)');
     expect(core.style.width).to.equal('100px');
     expect(
-      vm.$el.querySelector('.ac-switch__labac--left').querySelector('span')
+      vm.$el.querySelector('.ac-switch__label--left').querySelector('span')
         .textContent
     ).to.equal('off');
   });
@@ -33,7 +33,7 @@ describe('Switch', () => {
     });
 
     const icon = vm.$el
-      .querySelector('.ac-switch__labac--left')
+      .querySelector('.ac-switch__label--left')
       .querySelector('i');
     expect(icon.classList.contains('ac-icon-close')).to.true;
   });

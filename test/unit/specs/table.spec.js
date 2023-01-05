@@ -2515,7 +2515,7 @@ describe('Table', () => {
 
       const rows = vm.$el.querySelectorAll('.ac-table__row');
       expect(rows.length).to.equal(7);
-      const childRows = vm.$el.querySelectorAll('.ac-table__row--levac-1');
+      const childRows = vm.$el.querySelectorAll('.ac-table__row--level-1');
       expect(childRows.length).to.equal(2);
       childRows.forEach((item) => {
         expect(item.style.display).to.equal('none');
@@ -2639,7 +2639,7 @@ describe('Table', () => {
         true
       );
       await waitImmediate();
-      const childRows = vm.$el.querySelectorAll('.ac-table__row--levac-1');
+      const childRows = vm.$el.querySelectorAll('.ac-table__row--level-1');
       childRows.forEach((item) => {
         expect(item.style.display).to.equal('');
       });
@@ -2702,7 +2702,7 @@ describe('Table', () => {
         true
       );
       await waitImmediate();
-      const childRows = vm.$el.querySelectorAll('.ac-table__row--levac-1');
+      const childRows = vm.$el.querySelectorAll('.ac-table__row--level-1');
       childRows.forEach((item) => {
         expect(item.style.display).to.equal('');
       });

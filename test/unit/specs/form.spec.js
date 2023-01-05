@@ -26,7 +26,7 @@ describe('Form', () => {
     vm = createVue(
       {
         template: `
-        <el-form ref="form" :model="form" labac-width="80px">
+        <el-form ref="form" :model="form" label-width="80px">
           <el-form-item label="活动名称">
             <el-input v-model="form.name"></el-input>
           </el-form-item>
@@ -54,7 +54,7 @@ describe('Form', () => {
     vm = createVue(
       {
         template: `
-        <el-form ref="form" :model="form" labac-width="auto">
+        <el-form ref="form" :model="form" label-width="auto">
           <el-form-item label="活动名称">
             <el-input v-model="form.name"></el-input>
           </el-form-item>
@@ -122,7 +122,7 @@ describe('Form', () => {
       {
         template: `
         <div>
-          <el-form :model="form" labac-position="top" ref="labelTop">
+          <el-form :model="form" label-position="top" ref="labelTop">
             <el-form-item>
               <el-input v-model="form.name"></el-input>
             </el-form-item>
@@ -130,7 +130,7 @@ describe('Form', () => {
               <el-input v-model="form.address"></el-input>
             </el-form-item>
           </el-form>
-          <el-form :model="form" labac-position="left" ref="labelLeft">
+          <el-form :model="form" label-position="left" ref="labelLeft">
             <el-form-item>
               <el-input v-model="form.name"></el-input>
             </el-form-item>
@@ -151,9 +151,9 @@ describe('Form', () => {
       },
       true
     );
-    expect(vm.$refs.labelTop.$el.classList.contains('ac-form--labac-top')).to.be
+    expect(vm.$refs.labelTop.$el.classList.contains('ac-form--label-top')).to.be
       .true;
-    expect(vm.$refs.labelLeft.$el.classList.contains('ac-form--labac-left')).to
+    expect(vm.$refs.labelLeft.$el.classList.contains('ac-form--label-left')).to
       .be.true;
     done();
   });

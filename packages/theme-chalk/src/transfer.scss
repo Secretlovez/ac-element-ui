@@ -67,16 +67,16 @@
   background: $--color-white;
   display: inline-block;
   vertical-align: middle;
-  width: $--transfer-panac-width;
+  width: $--transfer-panel-width;
   max-height: 100%;
   box-sizing: border-box;
   position: relative;
 
   @include e(body) {
-    height: $--transfer-panac-body-height;
+    height: $--transfer-panel-body-height;
 
     @include when(with-footer) {
-      padding-bottom: $--transfer-panac-footer-height;
+      padding-bottom: $--transfer-panel-footer-height;
     }
   }
 
@@ -84,12 +84,12 @@
     margin: 0;
     padding: 6px 0;
     list-style: none;
-    height: $--transfer-panac-body-height;
+    height: $--transfer-panel-body-height;
     overflow: auto;
     box-sizing: border-box;
 
     @include when(filterable) {
-      height: #{$--transfer-panac-body-height - $--transfer-filter-height - 20px};
+      height: #{$--transfer-panel-body-height - $--transfer-filter-height - 20px};
       padding-top: 0;
     }
   }
@@ -155,9 +155,9 @@
   }
 
   .ac-transfer-panel__header {
-    height: $--transfer-panac-header-height;
-    line-height: $--transfer-panac-header-height;
-    background: $--transfer-panac-header-background-color;
+    height: $--transfer-panel-header-height;
+    line-height: $--transfer-panel-header-height;
+    background: $--transfer-panel-header-background-color;
     margin: 0;
     padding-left: 15px;
     border-bottom: 1px solid $--transfer-border-color;
@@ -185,7 +185,7 @@
   }
 
   .ac-transfer-panel__footer {
-    height: $--transfer-panac-footer-height;
+    height: $--transfer-panel-footer-height;
     background: $--color-white;
     margin: 0;
     padding: 0;

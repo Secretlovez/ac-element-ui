@@ -386,7 +386,7 @@ export default {
       const rowClasses = this.getRowClass(row, $index);
       let display = true;
       if (treeRowData) {
-        rowClasses.push('ac-table__row--levac-' + treeRowData.level);
+        rowClasses.push('ac-table__row--level-' + treeRowData.level);
         display = treeRowData.display;
       }
       // 指令 v-show 会覆盖 row-style 中 display
